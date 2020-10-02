@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7b56bfb5d21eaae286e532c3ed2f8941",
+    "content-hash": "7bbcf86b945d1f1c0a5d0883aa6eb1c3",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -830,6 +830,48 @@
                 "url"
             ],
             "time": "2020-09-30T07:37:11+00:00"
+        },
+        {
+            "name": "helori/laravel-seo",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/helori/laravel-seo.git",
+                "reference": "4907b0459663c2143054391116a7f488785d223b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/helori/laravel-seo/zipball/4907b0459663c2143054391116a7f488785d223b",
+                "reference": "4907b0459663c2143054391116a7f488785d223b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Helori\\LaravelSeo\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Helori Lanos",
+                    "email": "helori@algoart.fr",
+                    "homepage": "https://algoart.fr"
+                }
+            ],
+            "description": "SEO tools to insert meta and structured-data in laravel projects",
+            "keywords": [
+                "laravel",
+                "seo",
+                "structured data"
+            ],
+            "time": "2017-05-18T07:19:28+00:00"
         },
         {
             "name": "laravel/framework",
@@ -7128,7 +7170,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "helori/laravel-seo": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

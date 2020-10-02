@@ -14,6 +14,25 @@ return [
     */
 
     'name' => env('APP_NAME', 'Laravel'),
+    /*
+    |--------------------------------------------------------------------------
+    | Application SEO
+    |--------------------------------------------------------------------------
+    */
+    'description'   => 'Tin thể thao: Xem tin thể thao bóng đá hôm nay 24/7. Xem video thể thao, thông tin lịch thi đấu và tin nhanh thể thao trong nước và quốc tế mới nhất',
+    'keywords'      => 'Thể thao, Thể thao Việt Nam, Sự kiện thể thao, thể thao 24h, thể thao 247, tin thể thao, tin nhanh thể thao, thể thao bóng đá, bản tin thể thao hôm nay, bóng đá Việt nam',
+    'phone'         => '',
+    'author'        => 'thethao.ai',
+    'copyright'     => 'Copyright © ' . date('Y') . ' by Thethao.ai',
+    'language'      => 'Vietnamese',
+    'distribution'  => 'Global',
+    'refresh'       => '1200',
+    'revisit_after' => '1 DAYS',
+    'rating'        => 'GENERAL',
+
+    'fb_app_id'   => '',
+    'fb_pages'    => '',
+    'fb_page_url' => 'https://www.facebook.com/',
 
     /*
     |--------------------------------------------------------------------------
@@ -161,7 +180,7 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
-
+        Helori\LaravelSeo\SeoServiceProvider::class,
         /*
          * Package Service Providers...
          */
@@ -226,7 +245,7 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-
+        'Seo' => Helori\LaravelSeo\Facades\Seo::class,
     ],
 
 ];
