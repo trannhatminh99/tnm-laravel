@@ -7,6 +7,7 @@ use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
 use Helori\LaravelSeo\Facades\Seo;
+use Illuminate\Support\Facades\View;
 
 class Controller extends BaseController
 {
@@ -18,6 +19,9 @@ class Controller extends BaseController
     {
         $this->_seo = new Seo();
         $this->_globalSeo();
+        $data['main_menu'] = $this->_getMainMenu();
+
+        View::share($data);
     }
 
     private function _globalSeo()
@@ -40,5 +44,10 @@ class Controller extends BaseController
         $this->_seo::set('fb-app-id', config('app.fb_app_id'));
         $this->_seo::set('fb-pages', config('app.fb_pages'));
         $this->_seo::set('fb-page-url', config('app.fb_page_url'));
+    }
+
+    private function _getMainMenu()
+    {
+        return '123';
     }
 }
